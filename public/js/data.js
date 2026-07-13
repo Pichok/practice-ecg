@@ -1,4 +1,4 @@
-// Carrega e filtra o database.json
+// Carrega e filtra o database conforme o idioma
 (function (global) {
   "use strict";
 
@@ -19,8 +19,9 @@
     return a;
   }
 
-  DB.carregar = function () {
-    return $.getJSON("./database-pt-br.json").then(function (dados) {
+  DB.carregar = function (file) {
+    file = file || (global.ECG_I18N ? global.ECG_I18N.currentFile() : "./database-pt-br.json");
+    return $.getJSON(file).then(function (dados) {
       DB.all = Array.isArray(dados) ? dados : [];
       var set = {};
       DB.all.forEach(function (c) {
@@ -42,6 +43,23 @@
       );
     }
     return DB.filtered;
+  };
+
+  DB.porId = function (id) {
+    id = String(id);
+    for (var i = 0; i < DB.all.length; i++) {
+      if (String(DB.all[i].id) === id) return DB.all[i];
+    }
+    return null;
+  };
+
+  DB.porCategoria = function () {
+    var map = {};
+    DB.all.forEach(function (c) {
+      if (!c || !c.categoria) return;
+      (map[c.categoria] = map[c.categoria] || []).push(c);
+    });
+    return map;
   };
 
   global.ECG_DB = DB;

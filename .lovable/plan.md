@@ -1,70 +1,84 @@
 ## Objetivo
 
-Recomeçar o projeto como uma aplicação estática (HTML + jQuery + Tailwind via CDN) para treinar leitura de ECGs, com dados extraídos automaticamente do ecglibrary.com via Firecrawl e persistência de progresso no `localStorage`.
+Adicionar três recursos à aplicação atual (HTML + jQuery + Tailwind CDN):
 
-## Etapas
+1. **Dark mode** com alternância manual e persistência.
+2. **Página "Biblioteca"** com todos os casos agrupados por categoria em lista de duas colunas, e página de detalhe do caso.
+3. **Seletor de idioma** (pt-BR / EN, extensível a outros) trocando entre `database-pt-br.json` e `database-en.json`.
 
-### 1. Preparação
-- Remover a estrutura React/TanStack existente (`src/`, `src/routes/`, `vite.config.ts`, `router.tsx` etc.) e substituir por uma app estática servida pelo Vite (apenas `index.html` + assets estáticos).
-- Conectar o **Firecrawl** (`standard_connectors--connect`) para permitir o scraping.
+## Estrutura de arquivos
 
-### 2. Scraping (executado uma única vez em build-time via script Node)
-- Criar `scripts/scrape-ecglibrary.mjs` que:
-  1. Faz `map` de `http://www.ecglibrary.com/ecghome.php` para descobrir as páginas de categorias.
-  2. Identifica as categorias principais: *Normal ECGs, Ischaemic heart disease, AV block, Bundle branch block, Atrial rhythms, Ventricular rhythms, Miscellaneous, Paediatric, Pacing*.
-  3. Para cada página de caso, faz `scrape` (formatos `markdown` + `links` + `html`) e extrai:
-     - `categoria`
-     - `caso_clinico` (texto acima do ECG)
-     - `imagem_ecg` (URL absoluta da imagem principal)
-     - `diagnostico` (título/heading do caso)
-     - `interpretacao` (texto descritivo abaixo do ECG)
-  4. Grava `public/database.json` no formato pedido, com `id` sequencial.
-- Rodar o script uma vez e commitar o `database.json` gerado (a app em runtime só lê o JSON estático, sem depender do Firecrawl).
+Sem framework — continuamos multi-página estática:
 
-### 3. Interface (HTML + jQuery + Tailwind CDN)
-Arquivo único `index.html` + `app.js` + `styles.css` (mínimo).
+```text
+index.html            → tela de treino (quiz), como já existe
+biblioteca.html       → nova: lista de todos os casos por categoria
+caso.html             → nova: detalhe de um caso (via ?id=)
+public/js/
+  data.js             → estendido: suporta múltiplos idiomas
+  case.js             → reutilizado no detalhe
+  quiz.js             → inalterado
+  app.js              → treino (index)
+  library.js          → nova: renderiza biblioteca
+  detail.js           → nova: renderiza caso individual
+  i18n.js             → nova: gerencia idioma + textos da UI
+  theme.js            → nova: gerencia dark mode
+public/styles.css     → ajustes para dark
+```
 
-Estrutura em português:
-- **Cabeçalho**: título "Treinamento de ECG" + seletor `<select>` de categoria (opção "Todas").
-- **Card do caso** (componente lógico em `app.js`):
-  - Caso clínico em destaque.
-  - Imagem do ECG clicável → abre modal em tela cheia com zoom (usando transform scale + arrastar, sem libs).
-- **Área de gabarito** (oculta inicialmente):
-  - Botão **"Ver Diagnóstico"** → revela `diagnostico` e `interpretacao` com fade.
-  - Após revelar: botões **"Acertei"** (verde) e **"Errei"** (vermelho).
-- **Painel de estatísticas**:
-  - Contadores em tempo real: Acertos / Erros / Taxa de acerto (%).
-  - Barra de progresso "Questão X de N" + botão **"Próximo ECG"**.
-  - Botão **"Reiniciar progresso"** que limpa o `localStorage`.
+## 1. Dark mode
 
-### 4. Módulos JS (jQuery)
-- `data.js` — `carregarDatabase()`: `$.getJSON('database.json')`, aplica filtro por categoria, embaralha.
-- `case.js` — `renderCaso(caso)`: preenche DOM, esconde gabarito, liga modal de zoom.
-- `quiz.js` — gerencia estado (índice atual, acertos, erros), atualiza contadores/barra, persiste em `localStorage` (`ecg-quiz-progress`).
-- `app.js` — bootstrap: `$(function(){ ... })` amarra tudo.
-
-### 5. Estilo
-- Tailwind via `<script src="https://cdn.tailwindcss.com"></script>`.
-- Layout responsivo (mobile-first), tipografia limpa, paleta clínica (branco/cinza/azul; verde e vermelho apenas nos botões de feedback).
-
-### 6. Persistência
-- Chave `ecg-quiz-progress` no `localStorage`:
-  ```json
-  { "acertos": 0, "erros": 0, "vistos": [1,2,3], "categoria": "todas" }
+- Botão "🌙 / ☀️" no header de todas as páginas.
+- `theme.js` aplica classe `dark` em `<html>` e salva em `localStorage` (`ecg-theme`).
+- Habilitar `darkMode: 'class'` via config inline do Tailwind CDN:
+  ```html
+  <script>tailwind.config = { darkMode: 'class' }</script>
   ```
-- Restaurado ao carregar; atualizado a cada clique em Acertei/Errei.
+- Adicionar variantes `dark:` nos containers principais (bg, texto, bordas, cards, modal de zoom, badges).
+- `styles.css`: fundo do grid do ECG mantém-se claro (a imagem exige fundo branco), então envolvemos a imagem em wrapper branco mesmo no dark.
 
-## Detalhes técnicos
+## 2. Biblioteca de casos (`biblioteca.html` + `caso.html`)
 
-- **Sem framework JS**: `index.html` estático, jQuery 3.x via CDN, Tailwind via CDN. Sem Vite/React/TanStack.
-- **Firecrawl** é usado apenas offline no script de scraping; a chave nunca vai para o cliente.
-- Caso o scraping não encontre algum campo, o script registra o item em `scrape-warnings.log` e pula (não polui o JSON).
-- Modal de zoom: overlay `fixed inset-0`, imagem com `transform: scale()` controlado por roda do mouse e botões +/-, arrasto com `mousedown/mousemove`.
+**biblioteca.html**
+- Header compartilhado (título, seletor idioma, toggle dark, link "Treinar" ↔ "Biblioteca").
+- Campo de busca (filtra por diagnóstico/caso clínico).
+- Filtro de categoria (mesmas opções do quiz).
+- Renderiza por categoria: `<h2>` da categoria + grid `grid-cols-1 sm:grid-cols-2` com cards clicáveis (diagnóstico + trecho do caso). Cada card link para `caso.html?id={id}`.
+- Estado vazio + contadores por categoria.
+
+**caso.html**
+- Recebe `?id=`.
+- Reusa `ECG_CASE.render()` e o modal de zoom já existentes; gabarito revelado por padrão (não é modo quiz).
+- Botão "← Voltar à biblioteca" e "Treinar este tipo" (leva ao quiz com categoria pré-selecionada via `?categoria=`).
+- `index.html` passa a ler `?categoria=` para pré-selecionar o filtro.
+
+## 3. Seletor de idioma
+
+- `<select id="idioma">` no header (todas as páginas): pt-BR, EN. Estrutura pronta para novos idiomas.
+- `i18n.js`:
+  - Lista de idiomas: `[{code:'pt-BR', label:'Português', file:'database-pt-br.json'}, {code:'en', label:'English', file:'database-en.json'}]`.
+  - Textos fixos da UI (labels, botões, títulos) num dicionário por idioma; aplicados via `data-i18n="chave"`.
+  - `getIdioma()` / `setIdioma()` persistem em `localStorage` (`ecg-lang`, padrão `pt-BR`).
+- `data.js`:
+  - `DB.carregar()` passa a receber o idioma e busca o JSON correspondente.
+  - Trocar idioma dispara recarga do dataset e re-render (no quiz reinicia a lista; na biblioteca re-renderiza; no detalhe recarrega o caso pelo mesmo `id`).
+- Se um `id` não existir no idioma alvo (datasets diferentes), exibe aviso e volta à biblioteca.
+
+## Persistência (localStorage)
+
+- `ecg-quiz-progress` (já existe) — inalterado.
+- `ecg-theme`: `'dark' | 'light'`.
+- `ecg-lang`: `'pt-BR' | 'en' | ...`.
+
+## Escopo — o que NÃO muda
+
+- Lógica do quiz, contadores, scraper, e conteúdo dos JSONs.
+- Nenhum backend novo; tudo client-side estático.
 
 ## Entregáveis
-- `index.html`, `app.js`, `case.js`, `quiz.js`, `data.js`, `styles.css`
-- `public/database.json` (gerado)
-- `scripts/scrape-ecglibrary.mjs`
-- Remoção da estrutura React existente.
 
-Confirma para eu prosseguir?
+- `index.html` (header atualizado: toggle dark + seletor idioma + link biblioteca; i18n nos textos).
+- `biblioteca.html`, `caso.html` novos.
+- `public/js/theme.js`, `i18n.js`, `library.js`, `detail.js` novos.
+- `public/js/data.js`, `app.js`, `case.js` ajustados para idioma/dark.
+- `public/styles.css` com regras dark.

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biblioteca — Praticar ECG</title>
+    <meta name="description" content="Explore todos os casos de ECG organizados por categoria." />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <script>
+      try {
+        var t = localStorage.getItem("ecg-theme");
+        if (t === "dark") document.documentElement.classList.add("dark");
+      } catch (e) {}
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class' };</script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="min-h-screen bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
+    <header class="border-b border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900">
+      <div class="mx-auto flex max-w-5xl flex-col gap-3 px-4 py-4 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <h1 class="text-xl font-bold sm:text-2xl" data-i18n="library_title">Biblioteca de Casos</h1>
+          <p class="text-xs text-slate-500 dark:text-slate-400 sm:text-sm" data-i18n="app_subtitle"></p>
+        </div>
+        <div class="flex flex-wrap items-center gap-2">
+          <nav class="mr-2 flex gap-1 text-sm">
+            <a href="./index.html" class="rounded-md px-3 py-1.5 font-medium text-slate-700 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800" data-i18n="nav_train">Treinar</a>
+            <a href="./biblioteca.html" class="rounded-md bg-blue-600 px-3 py-1.5 font-medium text-white" data-i18n="nav_library">Biblioteca</a>
+          </nav>
+          <label for="idioma" class="text-sm font-medium" data-i18n="label_language">Idioma:</label>
+          <select id="idioma" class="rounded-md border border-slate-300 bg-white px-2 py-1.5 text-sm shadow-sm dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100"></select>
+          <button type="button" class="btn-theme rounded-md border border-slate-300 bg-white px-2.5 py-1.5 text-sm shadow-sm dark:border-slate-700 dark:bg-slate-800">
+            <span class="theme-icon">🌙</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-5xl px-4 py-6">
+      <div class="mb-6 flex flex-col gap-3 sm:flex-row">
+        <input id="busca" type="search" class="flex-1 rounded-md border border-slate-300 bg-white px-3 py-2 text-sm shadow-sm dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100" data-i18n-placeholder="search_placeholder" />
+        <select id="categoria" class="rounded-md border border-slate-300 bg-white px-3 py-2 text-sm shadow-sm dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100"></select>
+      </div>
+
+      <div id="loading" class="rounded-lg border border-slate-200 bg-white p-8 text-center shadow-sm dark:border-slate-800 dark:bg-slate-900">
+        <p data-i18n="loading">Carregando...</p>
+      </div>
+      <div id="error" class="hidden rounded-lg border border-rose-200 bg-rose-50 p-6 text-center text-rose-800 dark:border-rose-900 dark:bg-rose-950 dark:text-rose-200">
+        Erro ao carregar os dados.
+      </div>
+
+      <div id="library" class="hidden"></div>
+
+      <footer class="mt-10 text-center text-xs text-slate-500 dark:text-slate-400" data-i18n="footer"></footer>
+    </main>
+
+    <script src="./js/theme.js"></script>
+    <script src="./js/i18n.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/library.js"></script>
+  </body>
+</html>

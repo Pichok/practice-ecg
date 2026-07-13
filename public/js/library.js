@@ -42,7 +42,7 @@ $(function () {
       );
       var $grid = $sec.find(".grid");
       itens.forEach(function (item) {
-        var href = "./caso.html?id=" + encodeURIComponent(item.id);
+        var href = "./../caso.html?id=" + encodeURIComponent(item.id);
         var $card = $(
           '<a href="' + href + '" class="block rounded-lg border border-slate-200 bg-white p-3 shadow-sm transition hover:border-blue-400 hover:shadow dark:border-slate-700 dark:bg-slate-800 dark:hover:border-blue-500">' +
             '<div class="font-semibold text-slate-900 dark:text-slate-100">' + escapar(item.diagnostico || "—") + "</div>" +

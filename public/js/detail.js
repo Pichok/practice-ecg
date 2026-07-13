@@ -28,7 +28,7 @@ $(function () {
     $("#gabarito").removeClass("hidden").show();
     $("#btn-train-cat").attr(
       "href",
-      "./index.html?categoria=" + encodeURIComponent(caso.categoria || "todas")
+      "./../index.html?categoria=" + encodeURIComponent(caso.categoria || "todas")
     );
   }
 

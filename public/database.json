@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "categoria": "Doença isquêmica do coração",
+    "caso_clinico": "A 55 year old man with 4 hours of 'crushing' chest pain.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/infmi_2x.png",
+    "diagnostico": "Inferior myocardial infarction",
+    "interpretacao": "- ST elevation in the inferior leads II, III and aVF\nSee also acute anterior MI .\nRight Bundle Branch Block and sinus bradycardia are also present.",
+    "fonte": "http://www.ecglibrary.com/infmi.php"
+  },
+  {
+    "id": 2,
+    "categoria": "Padrões de hipertrofia",
+    "caso_clinico": "An 84 year old lady with hypertension.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/lll_2x.png",
+    "diagnostico": "Left anterior hemiblock, LVH, LAH, and long PR",
+    "interpretacao": "- left anterior hemiblock\n- initial R wave in the inferior leads (II, III and aVF)\nThere are a number of abnormalities here.",
+    "fonte": "http://www.ecglibrary.com/lll.php"
+  },
+  {
+    "id": 3,
+    "categoria": "Miscelânea",
+    "caso_clinico": "A 40 year old woman with pleuritic chest pain and breathlessness.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/pe_2_2x.png",
+    "diagnostico": "Acute pulmonary embolus",
+    "interpretacao": "- an S1Q3T3 pattern\nThe following, often transient, changes may be seen in a large pulmonary embolus.",
+    "fonte": "http://www.ecglibrary.com/pe.php"
+  }
+]

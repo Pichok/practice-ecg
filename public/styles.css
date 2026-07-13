@@ -1,0 +1,15 @@
+/* Ajustes finos além do Tailwind CDN */
+#zoom-img {
+  transition: transform 0.15s ease-out;
+}
+#zoom-img.dragging {
+  cursor: grabbing !important;
+  transition: none;
+}
+#case-interpretacao ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+#case-interpretacao li {
+  margin-bottom: 0.25rem;
+}

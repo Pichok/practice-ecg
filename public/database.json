@@ -1,0 +1,371 @@
+[
+  {
+    "id": 1,
+    "categoria": "Doença isquêmica do coração",
+    "caso_clinico": "A 55 year old man with 4 hours of 'crushing' chest pain.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/infmi_2x.png",
+    "diagnostico": "Inferior myocardial infarction",
+    "interpretacao": "- ST elevation in the inferior leads II, III and aVF\nSee also acute anterior MI .\nRight Bundle Branch Block and sinus bradycardia are also present.",
+    "fonte": "http://www.ecglibrary.com/infmi.php"
+  },
+  {
+    "id": 2,
+    "categoria": "Doença isquêmica do coração",
+    "caso_clinico": "A 63 year old woman with 10 hours of chest pain and sweating.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/ami.gif",
+    "diagnostico": "Acute anterior myocardial infarction",
+    "interpretacao": "- ST elevation in the anterior leads V1 - 6, I and aVL\n- reciprocal ST depression in the inferior leads",
+    "fonte": "http://www.ecglibrary.com/ami.html"
+  },
+  {
+    "id": 3,
+    "categoria": "Doença isquêmica do coração",
+    "caso_clinico": "A 60 year old woman with 3 hours of chest pain.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/postlat.gif",
+    "diagnostico": "Acute posterior myocardial infarction",
+    "interpretacao": "- (hyperacute) the mirror image of acute injury in leads V1 - 3\n- (fully evolved) tall R wave, tall upright T wave in leads V1 -3\n- usually associated with inferior and/or lateral wall MI",
+    "fonte": "http://www.ecglibrary.com/postlat.html"
+  },
+  {
+    "id": 4,
+    "categoria": "Doença isquêmica do coração",
+    "caso_clinico": "A 53 year old man with Ischaemic Heart Disease.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/oldmi.gif",
+    "diagnostico": "Old inferior myocardial infarction",
+    "interpretacao": "- a Q wave in lead III wider than 1 mm (1 small square) and",
+    "fonte": "http://www.ecglibrary.com/oldmi.html"
+  },
+  {
+    "id": 5,
+    "categoria": "Doença isquêmica do coração",
+    "caso_clinico": "A 79 year old man with 5 hours of chest pain.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/lbbbimi.gif",
+    "diagnostico": "Acute myocardial infarction in the presence of left bundle branch block",
+    "interpretacao": "- ST changes in the same direction as the QRS (as shown here)\n- ST elevation more than you'd expect from LBBB alone (e.g. > 5 mm in leads V1 - 3)\n- Q waves in two consecutive lateral leads (indicating anteroseptal MI)",
+    "fonte": "http://www.ecglibrary.com/lbbbimi.html"
+  },
+  {
+    "id": 6,
+    "categoria": "Padrões de hipertrofia",
+    "caso_clinico": "An 83 year old man with aortic stenosis.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/lvhlah.gif",
+    "diagnostico": "Left ventricular hypertrophy (LVH)",
+    "interpretacao": "- Sokolow + Lyon (Am Heart J, 1949;37:161)\n- S V1+ R V5 or V6 > 35 mm\nSee also - mitral stenosis .",
+    "fonte": "http://www.ecglibrary.com/lvhlah.html"
+  },
+  {
+    "id": 7,
+    "categoria": "Padrões de hipertrofia",
+    "caso_clinico": "A 75 year old lady with loud first heart sound and mid-diastolic murmur.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/m_sten3.gif",
+    "diagnostico": "Mitral Stenosis",
+    "interpretacao": "- There is atrial fibrillation . No P waves are visible. The rhythm is irregularly irregular (random).\nThe combination of Atrial Fibrillation and Right Axis Deviation on the ECG suggests the possibility of mitral stenosis.",
+    "fonte": "http://www.ecglibrary.com/m_sten.html"
+  },
+  {
+    "id": 8,
+    "categoria": "Padrões de hipertrofia",
+    "caso_clinico": "A 59 year old lady with chronic bronchitis.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/rah.gif",
+    "diagnostico": "Right atrial hypertrophy",
+    "interpretacao": "- A P wave in lead II taller then 2.5 mm (2.5 small squares).",
+    "fonte": "http://www.ecglibrary.com/rah.html"
+  },
+  {
+    "id": 9,
+    "categoria": "Padrões de hipertrofia",
+    "caso_clinico": "An 84 year old lady with hypertension.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/lll_2x.png",
+    "diagnostico": "Left anterior hemiblock, LVH, LAH, and long PR",
+    "interpretacao": "- left anterior hemiblock\n- initial R wave in the inferior leads (II, III and aVF)\nThere are a number of abnormalities here.",
+    "fonte": "http://www.ecglibrary.com/lll.php"
+  },
+  {
+    "id": 10,
+    "categoria": "Bloqueio atrioventricular (AV)",
+    "caso_clinico": "A 73 year old woman with dizziness.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/2_1avb.gif",
+    "diagnostico": "2 to 1 AV block",
+    "interpretacao": "- every other P wave is conducted to the ventricles",
+    "fonte": "http://www.ecglibrary.com/2_1avb.html"
+  },
+  {
+    "id": 11,
+    "categoria": "Bloqueio atrioventricular (AV)",
+    "caso_clinico": "A 70 year old man with exercise intolerance.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/chb4.gif",
+    "diagnostico": "Complete Heart Block",
+    "interpretacao": "- P waves are not conducted to the ventricles because of block at the AV node. The P waves are indicated below and show no relation to the QRS complexes. They 'probe' every part of the ventricular cycle but are never conducted.",
+    "fonte": "http://www.ecglibrary.com/chb4.html"
+  },
+  {
+    "id": 12,
+    "categoria": "Bloqueio atrioventricular (AV)",
+    "caso_clinico": "An 82 year old lady with dizzy spells.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/af_chb3.gif",
+    "diagnostico": "Atrial fibrillation and complete heart block",
+    "interpretacao": "- Fibrillary waves of atrial fibrillation and no P waves.\n- The wider the QRS of the ventricular escape rhythm the less reliable the escape mechanism.",
+    "fonte": "http://www.ecglibrary.com/af_chb.html"
+  },
+  {
+    "id": 13,
+    "categoria": "Bloqueios de ramo",
+    "caso_clinico": "A 55 year old man with 4 hours of \"crushing\" chest pain.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/infmi.gif",
+    "diagnostico": "Right Bundle Branch Block",
+    "interpretacao": "- wide QRS, more than 120 ms (3 small squares)\nSee also Left Bundle Branch Block .\nAcute inferior MI and sinus bradycardia are also present.",
+    "fonte": "http://www.ecglibrary.com/rbbb.html"
+  },
+  {
+    "id": 14,
+    "categoria": "Bloqueios de ramo",
+    "caso_clinico": "A 90 year old lady with syncope.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/trifas2.gif",
+    "diagnostico": "'Trifasicular' block",
+    "interpretacao": "- Complete Right Bundle Branch Block\nThe combination of RBBB, LAFB and long PR interval has been called 'trifasicular' block and implies that conduction is delayed in the third fascicle (in this case the left posterior fascicle) and a permanent pacemaker may be needed. However there are other causes of a long PR interval such as delayed conduction in the AV node or atrium so 'trifascicular block' is not a true ECG diagnosis.",
+    "fonte": "http://www.ecglibrary.com/trifas.html"
+  },
+  {
+    "id": 15,
+    "categoria": "Ritmos supraventriculares",
+    "caso_clinico": "A 55 year old man with 4 hours of \"crushing\" chest pain.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/infmi.gif",
+    "diagnostico": "Sinus bradycardia",
+    "interpretacao": "- P wave rate of less than 60 bpm\nSee also Sinus Tachycardia .\nAcute inferior MI and Right Bundle Branch Block are also present.",
+    "fonte": "http://www.ecglibrary.com/sbrady.html"
+  },
+  {
+    "id": 16,
+    "categoria": "Ritmos supraventriculares",
+    "caso_clinico": "A 34 year old lady with asthma.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/stach.gif",
+    "diagnostico": "Sinus tachycardia",
+    "interpretacao": "",
+    "fonte": "http://www.ecglibrary.com/stach.html"
+  },
+  {
+    "id": 17,
+    "categoria": "Ritmos supraventriculares",
+    "caso_clinico": "A 60 year old man with hypertension.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/a_big.gif",
+    "diagnostico": "Atrial Bigeminy",
+    "interpretacao": "",
+    "fonte": "http://www.ecglibrary.com/a_big.html"
+  },
+  {
+    "id": 18,
+    "categoria": "Ritmos supraventriculares",
+    "caso_clinico": "A 48 year old man with thumping sensations in his chest.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/apb.gif",
+    "diagnostico": "Atrial Premature Beat (APB)",
+    "interpretacao": "- an abnormal P wave (arrowed in figure below)",
+    "fonte": "http://www.ecglibrary.com/apb.html"
+  },
+  {
+    "id": 19,
+    "categoria": "Ritmos supraventriculares",
+    "caso_clinico": "A 76 year old man with breathlessness.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/af_fast2.gif",
+    "diagnostico": "Atrial fibrillation with rapid ventricular response",
+    "interpretacao": "- Irregularly irregular ventricular rhythm.",
+    "fonte": "http://www.ecglibrary.com/af_fast.html"
+  },
+  {
+    "id": 20,
+    "categoria": "Ritmos supraventriculares",
+    "caso_clinico": "A 60 year old woman with hypertension.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/af_lbbb.gif",
+    "diagnostico": "Atrial fibrillation with pre-existing left bundle branch block",
+    "interpretacao": "- Sometimes this can be confused with ventricular tachycardia but closer inspection can identify the irregularity.\n- Features of typical left bundle branch block\n- no secondary R wave in lead V1",
+    "fonte": "http://www.ecglibrary.com/af_lbbb.html"
+  },
+  {
+    "id": 21,
+    "categoria": "Ritmos supraventriculares",
+    "caso_clinico": "A 68 year old lady on digoxin complaining of lethargy.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/aflut.gif",
+    "diagnostico": "Atrial flutter",
+    "interpretacao": "",
+    "fonte": "http://www.ecglibrary.com/aflut.html"
+  },
+  {
+    "id": 22,
+    "categoria": "Ritmos supraventriculares",
+    "caso_clinico": "An 57 year old lady with palpitations.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/af2_1.gif",
+    "diagnostico": "Atrial flutter with 2:1 AV conduction",
+    "interpretacao": "- The sawtooth waveform of atrial flutter can usually be seen in the inferior leads II, III and aVF if one looks closely. Sometimes the rapid atrial rate can be seen in V1.",
+    "fonte": "http://www.ecglibrary.com/af2_1.html"
+  },
+  {
+    "id": 23,
+    "categoria": "Ritmos supraventriculares",
+    "caso_clinico": "A 47 year old man with a long history of palpitations and, lately, blackouts.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/wpwaf2s.gif",
+    "diagnostico": "Wolf-Parkinson-White syndrome with atrial fibrillation",
+    "interpretacao": "- irregularly irregular, wide complex tachycardia\n- impulses from the atria are conducted to the ventricles via either\n- both the AV node and accessory pathway producing a broad fusion complex\n- or just the AV node producing a narrow complex (without a delta wave)\n- or just the accessory pathway producing a very broad 'pure' delta wave",
+    "fonte": "http://www.ecglibrary.com/wpwaf.html"
+  },
+  {
+    "id": 24,
+    "categoria": "Ritmos ventriculares",
+    "caso_clinico": "A lady with Romano-Ward syndrome.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/l_qt.gif",
+    "diagnostico": "Long QT interval",
+    "interpretacao": "- The QT interval normally varies with heart rate - becoming shorter at faster rates. It is usually corrected using the cycle length (R-R interval) as shown opposite.",
+    "fonte": "http://www.ecglibrary.com/l_qt.html"
+  },
+  {
+    "id": 25,
+    "categoria": "Ritmos ventriculares",
+    "caso_clinico": "A 50 year old man with chest pain for 24 hours",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/bigem.gif",
+    "diagnostico": "Ventricular bigeminy",
+    "interpretacao": "There are also features of an acute inferior myocardial infarction .",
+    "fonte": "http://www.ecglibrary.com/bigem.html"
+  },
+  {
+    "id": 26,
+    "categoria": "Ritmos ventriculares",
+    "caso_clinico": "A 45 year old lady with palpitations and history of chronic renal failure",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/vtavd1.gif",
+    "diagnostico": "Ventricular tachycardia",
+    "interpretacao": "- evidence of AV dissociation\n- capture or fusion beats\n1) Griffith MJ, Garrat CJ, Mounsey P, Camm AJ. Ventricular tachycardia as the default diagnosis in broad complex tachycardia. Lancet. 1994;343:386-\n2) Brugada P, Brugada J, Mont L, et al. A new approach to the differential diagnosis of a regular tachycardia with a wide QRS complex. Circulation. 1991;83:1649-1659",
+    "fonte": "http://www.ecglibrary.com/vtavd1.html"
+  },
+  {
+    "id": 27,
+    "categoria": "Ritmos ventriculares",
+    "caso_clinico": "A 69 year old man 2 weeks after an inferior myocardial infarction",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/vtavd2.gif",
+    "diagnostico": "Ventricular tachycardia",
+    "interpretacao": "- evidence of AV dissociation\n- capture or fusion beats\n1) Griffith MJ, Garrat CJ, Mounsey P, Camm AJ. Ventricular tachycardia as the default diagnosis in broad complex tachycardia. Lancet. 1994;343:386-\n2) Brugada P, Brugada J, Mont L, et al. A new approach to the differential diagnosis of a regular tachycardia with a wide QRS complex. Circulation. 1991;83:1649-1659",
+    "fonte": "http://www.ecglibrary.com/vtavd2.html"
+  },
+  {
+    "id": 28,
+    "categoria": "Ritmos ventriculares",
+    "caso_clinico": "A 60 year old man with Ischaemic Heart Disease.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/tdp.gif",
+    "diagnostico": "Polymorphous ventricular tachycardia (Torsade de pointes).",
+    "interpretacao": "- This is a form of VT where there is usually no difficulty in recognising its ventricular origin.\n- changing R - R intervals\n- it is important to recognise this pattern as there are a number of reversible causes\n- hypokalaemia or hypomagnesaemia\n- congenital long QT syndromes",
+    "fonte": "http://www.ecglibrary.com/tdp.html"
+  },
+  {
+    "id": 29,
+    "categoria": "Ritmos ventriculares",
+    "caso_clinico": "A 36 year old lady with recurrent blackouts.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/icd.gif",
+    "diagnostico": "Implantable cardioverter defibrillator",
+    "interpretacao": "- Most of this 12-lead recording is polymorphic ventricular tachycardia but, in the rhythm strip, the large deflection (arrowed) is the defibrillator discharging.\nOK so I cheated a little with this one as the odds of catching this on a 12-lead ECG recording are very slim indeed. This is a reconstructed 12-lead recording from an electrophysiology study testing the device after placement.",
+    "fonte": "http://www.ecglibrary.com/icd.html"
+  },
+  {
+    "id": 30,
+    "categoria": "Ritmos ventriculares",
+    "caso_clinico": "A 60 year old man with 2 hours of \"crushing\" chest pain suddenly collapses.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/VFNORWCH.gif",
+    "diagnostico": "Ventricular fibrillation",
+    "interpretacao": "- bizarre, irregular, random waveform\n- no clearly identifiable QRS complexes or P waves\n- wandering baseline\nA 12 lead of Ventricular fibrillation should not usually be taken ... for obvious reasons. Instead of continuing to record the ECG you should check the patient's pulse and reach for the defibrillator!",
+    "fonte": "http://www.ecglibrary.com/vf.html"
+  },
+  {
+    "id": 31,
+    "categoria": "Marca-passos",
+    "caso_clinico": "A 72 year old man with a permanent pacemaker.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/vvi.gif",
+    "diagnostico": "Ventricular pacemaker",
+    "interpretacao": "- pacing spikes (best seen here in V4 - V6) will be seen - they may be subtle\nIn this example the pacemaker starts when there is a long R - R interval following a blocked atrial premature beat (arrowed in figure below). Sinus rhythm takes over again later in the rhythm strip.",
+    "fonte": "http://www.ecglibrary.com/vvi.html"
+  },
+  {
+    "id": 32,
+    "categoria": "Síndrome de Wolff-Parkinson-White",
+    "caso_clinico": "A 25 year old man with bouts of tachycardia.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/wpw.gif",
+    "diagnostico": "Wolf-Parkinson-White syndrome",
+    "interpretacao": "- short PR interval, less than 3 small squares (120 ms)\n- broad QRS\nAn accessory pathway, bundle of Kent, exists between atria and ventricles and causes early depolarisation of the ventricle. The location of the pathway may be deduced as follows:-",
+    "fonte": "http://www.ecglibrary.com/wpw.html"
+  },
+  {
+    "id": 33,
+    "categoria": "Síndrome de Wolff-Parkinson-White",
+    "caso_clinico": "A 23 year old man with epsiodes of tachycardia.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/wpw_type_B.gif",
+    "diagnostico": "Wolf-Parkinson-White syndrome",
+    "interpretacao": "- short PR interval, less than 3 small squares (120 ms)\n- broad QRS\nAn accessory pathway, bundle of Kent, exists between atria and ventricles and causes early depolarisation of the ventricle. The location of the pathway may be deduced as follows:-",
+    "fonte": "http://www.ecglibrary.com/wpw_as.html"
+  },
+  {
+    "id": 34,
+    "categoria": "Síndrome de Wolff-Parkinson-White",
+    "caso_clinico": "A 23 year old man with episodes of palpitations.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/WPW_takykardi_af.gif",
+    "diagnostico": "Wolf-Parkinson-White syndrome with atrial fibrillation",
+    "interpretacao": "- irregularly irregular, wide complex tachycardia\n- impulses from the atria are conducted to the ventricles via either\n- both the AV node and accessory pathway producing a broad fusion complex\n- or just the AV node producing a narrow complex (without a delta wave)\n- or just the accessory pathway producing a very broad 'pure' delta wave",
+    "fonte": "http://www.ecglibrary.com/wpwaf2.html"
+  },
+  {
+    "id": 35,
+    "categoria": "Miscelânea",
+    "caso_clinico": "A 56 year old man with breathlessness and raised JVP.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/elec_alt.gif",
+    "diagnostico": "Pericardial effusion with electrical alternans",
+    "interpretacao": "- The QRS axis alternates between beats. In this example it is best seen in the chest leads where the QRS points in different directions!",
+    "fonte": "http://www.ecglibrary.com/elec_alt.html"
+  },
+  {
+    "id": 36,
+    "categoria": "Miscelânea",
+    "caso_clinico": "A 50 year old man with bouts of tachycardia.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/lgl2.gif",
+    "diagnostico": "Lown Ganong Levine Syndrome",
+    "interpretacao": "- short PR interval, less than 3 small squares (120 ms)\nIn this ECG there is also non-specific inferolateral ST-T changes and voltage criteria for left ventricular hypertrophy .",
+    "fonte": "http://www.ecglibrary.com/lgl.html"
+  },
+  {
+    "id": 37,
+    "categoria": "Miscelânea",
+    "caso_clinico": "A 40 year old woman with pleuritic chest pain and breathlessness.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/pe_2_2x.png",
+    "diagnostico": "Acute pulmonary embolus",
+    "interpretacao": "- an S1Q3T3 pattern\nThe following, often transient, changes may be seen in a large pulmonary embolus.",
+    "fonte": "http://www.ecglibrary.com/pe.php"
+  },
+  {
+    "id": 38,
+    "categoria": "Miscelânea",
+    "caso_clinico": "A 58 year old man on haemodialysis presents with profound weakness after a weekend fishing trip.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/highk.gif",
+    "diagnostico": "Hyperkalaemia",
+    "interpretacao": "- small or absent P waves\n- wide QRS\n- wide, tall and tented T waves",
+    "fonte": "http://www.ecglibrary.com/highk.html"
+  },
+  {
+    "id": 39,
+    "categoria": "Miscelânea",
+    "caso_clinico": "A 22 year old lady with prolonged vomiting.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/hypok.gif",
+    "diagnostico": "Hypokalaemia",
+    "interpretacao": "- small or absent T waves\n- first or second degree AV block",
+    "fonte": "http://www.ecglibrary.com/hypok.html"
+  },
+  {
+    "id": 40,
+    "categoria": "Miscelânea",
+    "caso_clinico": "A 55 year old man with a history of a piggy-back heart transplant for ischaemic cardiomyopathy.",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/2hearts.gif",
+    "diagnostico": "Piggy-back heart transplant. 2 hearts in one chest.",
+    "interpretacao": "- two distinct QRS morphologies\n- two distinct rates",
+    "fonte": "http://www.ecglibrary.com/2hearts.html"
+  },
+  {
+    "id": 41,
+    "categoria": "Miscelânea",
+    "caso_clinico": "A 64 year old lady on digoxin",
+    "imagem_ecg": "http://www.ecglibrary.com/ecgs/dig.gif",
+    "diagnostico": "Digitalis effect",
+    "interpretacao": "- shortened QT interval\n- dysrhythmias\n- paroxysmal atrial tachycardia with variable AV block",
+    "fonte": "http://www.ecglibrary.com/dig.html"
+  }
+]

@@ -20,7 +20,7 @@
   }
 
   DB.carregar = function () {
-    return $.getJSON("/database.json").then(function (dados) {
+    return $.getJSON("/practice-ecg/public/database.json").then(function (dados) {
       DB.all = Array.isArray(dados) ? dados : [];
       var set = {};
       DB.all.forEach(function (c) {

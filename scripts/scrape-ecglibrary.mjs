@@ -106,33 +106,28 @@ function parseHome(html) {
   return secoes;
 }
 
-function parseCasePage(html) {
-  // Caso clínico + imagem: dentro de <div class="jumbotron">
+function extractImg(imgTag) {
+  const src = imgTag.match(/\bsrc\s*=\s*"([^"]+)"/i) || imgTag.match(/\bSRC\s*=\s*"([^"]+)"/i);
+  const srcset = imgTag.match(/\bsrcset\s*=\s*"([^"]+)"/i);
+  let best = src ? src[1] : "";
+  if (srcset) {
+    const parts = srcset[1].split(",").map((s) => s.trim().split(/\s+/)[0]);
+    if (parts.length) best = parts[0];
+  }
+  return absUrl(best);
+}
+
+function parseNewStyle(html) {
   const jumboMatch = html.match(
     /<div\s+class="jumbotron"[^>]*>([\s\S]*?)<\/div>\s*<\/div>/i
   );
-  let caso_clinico = "";
-  let imagem_ecg = "";
-  if (jumboMatch) {
-    const jb = jumboMatch[1];
-    const h1 = jb.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i);
-    if (h1) caso_clinico = stripTags(h1[1]);
-    const img = jb.match(/<img[^>]*>/i);
-    if (img) {
-      const src = img[0].match(/\bsrc="([^"]+)"/i);
-      const srcset = img[0].match(/\bsrcset="([^"]+)"/i);
-      let best = src ? src[1] : "";
-      if (srcset) {
-        // pega a primeira variante (geralmente _2x maior)
-        const parts = srcset[1].split(",").map((s) => s.trim().split(/\s+/)[0]);
-        if (parts.length) best = parts[0];
-      }
-      imagem_ecg = absUrl(best);
-    }
-  }
+  if (!jumboMatch) return null;
+  const jb = jumboMatch[1];
+  const h1 = jb.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i);
+  const img = jb.match(/<img[^>]*>/i);
+  const caso_clinico = h1 ? stripTags(h1[1]) : "";
+  const imagem_ecg = img ? extractImg(img[0]) : "";
 
-  // Diagnóstico + interpretação: primeiro <div class="col-md-4"> após jumbotron
-  // contendo um <h2>
   let diagnostico = "";
   let interpretacao = "";
   const colRe = /<div\s+class="col-md-\d+"[^>]*>([\s\S]*?)<\/div>/gi;
@@ -159,8 +154,70 @@ function parseCasePage(html) {
       break;
     }
   }
+  return { caso_clinico, imagem_ecg, diagnostico, interpretacao };
+}
+
+function parseOldStyle(html) {
+  // Páginas antigas: <h2> caso, <img>, <h2> diagnóstico, <ul> interpretação
+  const bodyMatch = html.match(/<body[^>]*>([\s\S]*?)<\/body>/i);
+  const body = bodyMatch ? bodyMatch[1] : html;
+
+  const h2s = [...body.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/gi)].map((m) => ({
+    idx: m.index,
+    end: m.index + m[0].length,
+    texto: stripTags(m[1]),
+  }));
+  if (h2s.length < 2) return null;
+
+  const caso_clinico = h2s[0].texto;
+  const diagnostico = h2s[1].texto;
+
+  // primeira <img> entre h2[0] e h2[1] (ou depois de h2[0])
+  const imgRe = /<img[^>]*>/gi;
+  let imgTag = null;
+  let im;
+  while ((im = imgRe.exec(body)) !== null) {
+    if (im.index > h2s[0].end && (h2s[1] ? im.index < h2s[1].idx : true)) {
+      imgTag = im[0];
+      break;
+    }
+  }
+  if (!imgTag) {
+    // fallback: qualquer img depois do primeiro h2
+    imgRe.lastIndex = h2s[0].end;
+    im = imgRe.exec(body);
+    if (im) imgTag = im[0];
+  }
+  const imagem_ecg = imgTag ? extractImg(imgTag) : "";
+
+  // interpretação: ul após h2[1]
+  const rest = body.slice(h2s[1].end);
+  const ul = rest.match(/<ul[\s\S]*?<\/ul>/i);
+  const partes = [];
+  if (ul) {
+    const bl = bulletsFromHtml(ul[0]);
+    if (bl) partes.push(bl);
+  }
+  // parágrafos após </ul>
+  const afterUl = ul ? rest.slice(rest.indexOf("</ul>") + 5) : rest;
+  const paras = [...afterUl.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/gi)].map((m) =>
+    stripTags(m[1])
+  );
+  paras.forEach((p) => {
+    if (p && !/go back|homepage/i.test(p)) partes.push(p);
+  });
+  const interpretacao = partes.join("\n").trim();
 
   return { caso_clinico, imagem_ecg, diagnostico, interpretacao };
+}
+
+function parseCasePage(html) {
+  return parseNewStyle(html) || parseOldStyle(html) || {
+    caso_clinico: "",
+    imagem_ecg: "",
+    diagnostico: "",
+    interpretacao: "",
+  };
 }
 
 async function main() {

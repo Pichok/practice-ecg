@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
+    <base href="http://localhost:8000/public/">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Treinamento de ECG — Leitura de Eletrocardiogramas</title>
@@ -16,10 +17,10 @@
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
 
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body class="min-h-screen bg-slate-50 text-slate-900 antialiased">
     <header class="border-b border-slate-200 bg-white">
@@ -112,7 +113,7 @@
             id="case-imagem"
             src=""
             alt="Eletrocardiograma"
-            class="mx-auto max-h-[500px] w-full cursor-zoom-in rounded-lg bg-white object-contain shadow"
+            class="mx-auto max-h-[500px] w-full cursor-zoom-in rounded-lg bg-white bg-grid object-contain shadow"
           />
           <p class="mt-2 text-center text-xs text-slate-500">
             Clique na imagem para ampliar
@@ -213,15 +214,15 @@
           id="zoom-img"
           src=""
           alt="Eletrocardiograma ampliado"
-          class="mx-auto block max-h-full origin-center cursor-grab select-none transition-transform"
+          class="mx-auto block max-h-full origin-center cursor-grab select-none transition-transform bg-grid"
           draggable="false"
         />
       </div>
     </div>
 
-    <script src="/practice-ecg/public/js/data.js"></script>
-    <script src="/practice-ecg/public/js/case.js"></script>
-    <script src="/practice-ecg/public/js/quiz.js"></script>
-    <script src="/practice-ecg/public/js/app.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/case.js"></script>
+    <script src="./js/quiz.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>

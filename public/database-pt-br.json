@@ -1,0 +1,371 @@
+[
+  {
+    "id": 1,
+    "categoria": "Doença isquêmica do coração",
+    "caso_clinico": "Homem de 55 anos com 4 horas de dor torácica opressiva.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/infmi_2x.png",
+    "diagnostico": "Infarto agudo do miocárdio com supra de ST (parede inferior)",
+    "interpretacao": "- Supra de ST nas derivações inferiores II, III e aVF.\n- Veja também infarto agudo anterior.\n- Presença de bloqueio de ramo direito e bradicardia sinusal.",
+    "fonte": "http://www.ecglibrary.com/infmi.php"
+  },
+  {
+    "id": 2,
+    "categoria": "Doença isquêmica do coração",
+    "caso_clinico": "Mulher de 63 anos com 10 horas de dor torácica e sudorese.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/ami.gif",
+    "diagnostico": "Infarto agudo do miocárdio com supra de ST (parede anterior)",
+    "interpretacao": "- Supra de ST nas derivações precordiais V1 a V6, I e aVL.\n- Infra de ST recíproco nas derivações inferiores.",
+    "fonte": "http://www.ecglibrary.com/ami.html"
+  },
+  {
+    "id": 3,
+    "categoria": "Doença isquêmica do coração",
+    "caso_clinico": "Mulher de 60 anos com 3 horas de dor torácica.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/postlat.gif",
+    "diagnostico": "Infarto agudo do miocárdio de parede posterior",
+    "interpretacao": "- (Hiperagudo) Imagem em espelho de lesão aguda nas derivações V1-V3.\n- (Totalmente evoluído) Onda R proeminente, onda T positiva e alta em V1-V3.\n- Frequentemente associado a infarto de parede inferior e/ou lateral.",
+    "fonte": "http://www.ecglibrary.com/postlat.html"
+  },
+  {
+    "id": 4,
+    "categoria": "Doença isquêmica do coração",
+    "caso_clinico": "Homem de 53 anos com coronariopatia (Doença Isquêmica do Coração).",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/oldmi.gif",
+    "diagnostico": "Infarto do miocárdio de parede inferior antigo (inativo)",
+    "interpretacao": "- Onda Q na derivação III com duração superior a 1 mm (1 quadradinho).",
+    "fonte": "http://www.ecglibrary.com/oldmi.html"
+  },
+  {
+    "id": 5,
+    "categoria": "Doença isquêmica do coração",
+    "caso_clinico": "Homem de 79 anos com 5 horas de dor torácica.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/lbbbimi.gif",
+    "diagnostico": "Infarto agudo do miocárdio na presença de bloqueio de ramo esquerdo (BRE)",
+    "interpretacao": "- Alterações do segmento ST na mesma direção do QRS (discordância apropriada/inapropriada).\n- Supra de ST maior do que o esperado apenas pelo BRE (ex: > 5 mm em V1-V3).\n- Ondas Q em duas derivações laterais consecutivas (indicando infarto anterosseptal).",
+    "fonte": "http://www.ecglibrary.com/lbbbimi.html"
+  },
+  {
+    "id": 6,
+    "categoria": "Padrões de hipertrofia",
+    "caso_clinico": "Homem de 83 anos com estenose aórtica.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/lvhlah.gif",
+    "diagnostico": "Hipertrofia ventricular esquerda (HVE)",
+    "interpretacao": "- Critério de Sokolow-Lyon (Am Heart J, 1949;37:161): S em V1 + R em V5 ou V6 > 35 mm.\n- Veja também estenose mitral.",
+    "fonte": "http://www.ecglibrary.com/lvhlah.html"
+  },
+  {
+    "id": 7,
+    "categoria": "Padrões de hipertrofia",
+    "caso_clinico": "Mulher de 75 anos com hiperfonese de primeira bulha e sopro mesodiastólico.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/m_sten3.gif",
+    "diagnostico": "Estenose mitral",
+    "interpretacao": "- Presença de fibrilação atrial. Ondas P ausentes. Ritmo irregularmente irregular.\n- A combinação de fibrilação atrial e desvio do eixo para a direita no ECG sugere a possibilidade de estenose mitral.",
+    "fonte": "http://www.ecglibrary.com/m_sten.html"
+  },
+  {
+    "id": 8,
+    "categoria": "Padrões de hipertrofia",
+    "caso_clinico": "Mulher de 59 anos com bronquite crônica.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/rah.gif",
+    "diagnostico": "Sobrecarga atrial direita",
+    "interpretacao": "- Onda P na derivação II com amplitude superior a 2,5 mm (2,5 quadradinhos).",
+    "fonte": "http://www.ecglibrary.com/rah.html"
+  },
+  {
+    "id": 9,
+    "categoria": "Padrões de hipertrofia",
+    "caso_clinico": "Mulher de 84 anos com hipertensão arterial sistêmica.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/lll_2x.png",
+    "diagnostico": "Bloqueio divisional anterossuperior esquerdo (BDASE), HVE, sobrecarga atrial esquerda e intervalo PR prolongado",
+    "interpretacao": "- Bloqueio divisional anterossuperior esquerdo.\n- Onda R inicial nas derivações inferiores (II, III e aVF).\n- Há diversas anormalidades presentes.",
+    "fonte": "http://www.ecglibrary.com/lll.php"
+  },
+  {
+    "id": 10,
+    "categoria": "Bloqueio atrioventricular (AV)",
+    "caso_clinico": "Mulher de 73 anos com tontura.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/2_1avb.gif",
+    "diagnostico": "Bloqueio atrioventricular 2:1",
+    "interpretacao": "- A cada duas ondas P, apenas uma é conduzida aos ventrículos.",
+    "fonte": "http://www.ecglibrary.com/2_1avb.html"
+  },
+  {
+    "id": 11,
+    "categoria": "Bloqueio atrioventricular (AV)",
+    "caso_clinico": "Homem de 70 anos com intolerância ao esforço.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/chb4.gif",
+    "diagnostico": "Bloqueio atrioventricular total (BAVT)",
+    "interpretacao": "- Ondas P não são conduzidas aos ventrículos devido ao bloqueio no nó AV. As ondas P não possuem relação com os complexos QRS (dissociação atrioventricular).",
+    "fonte": "http://www.ecglibrary.com/chb4.html"
+  },
+  {
+    "id": 12,
+    "categoria": "Bloqueio atrioventricular (AV)",
+    "caso_clinico": "Mulher de 82 anos com episódios de tontura.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/af_chb3.gif",
+    "diagnostico": "Fibrilação atrial com bloqueio atrioventricular total",
+    "interpretacao": "- Ondas de fibrilação (onda f) presentes, ausência de ondas P organizadas.\n- Quanto mais largo o QRS do ritmo de escape ventricular, menos confiável é o mecanismo de escape.",
+    "fonte": "http://www.ecglibrary.com/af_chb.html"
+  },
+  {
+    "id": 13,
+    "categoria": "Bloqueios de ramo",
+    "caso_clinico": "Homem de 55 anos com 4 horas de dor torácica opressiva.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/infmi.gif",
+    "diagnostico": "Bloqueio de ramo direito (BRD)",
+    "interpretacao": "- QRS largo, maior que 120 ms (3 quadradinhos).\n- Veja também bloqueio de ramo esquerdo.\n- Presença de infarto agudo inferior e bradicardia sinusal.",
+    "fonte": "http://www.ecglibrary.com/rbbb.html"
+  },
+  {
+    "id": 14,
+    "categoria": "Bloqueios de ramo",
+    "caso_clinico": "Mulher de 90 anos com síncope.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/trifas2.gif",
+    "diagnostico": "Bloqueio trifascicular (suspeito)",
+    "interpretacao": "- Bloqueio de ramo direito completo.\n- A combinação de BRD, BDASE e intervalo PR longo tem sido chamada de 'bloqueio trifascicular', sugerindo atraso de condução no terceiro fascículo (neste caso, o fascículo póstero-inferior esquerdo), podendo indicar necessidade de marcapasso. No entanto, outras causas de PR longo (como atraso no nó AV ou átrio) existem, logo, 'bloqueio trifascicular' não é um diagnóstico eletrocardiográfico definitivo.",
+    "fonte": "http://www.ecglibrary.com/trifas.html"
+  },
+  {
+    "id": 15,
+    "categoria": "Ritmos supraventriculares",
+    "caso_clinico": "Homem de 55 anos com 4 horas de dor torácica opressiva.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/infmi.gif",
+    "diagnostico": "Bradicardia sinusal",
+    "interpretacao": "- Frequência cardíaca (ondas P) inferior a 60 bpm.\n- Veja também taquicardia sinusal.\n- Presença de infarto agudo inferior e bloqueio de ramo direito.",
+    "fonte": "http://www.ecglibrary.com/sbrady.html"
+  },
+  {
+    "id": 16,
+    "categoria": "Ritmos supraventriculares",
+    "caso_clinico": "Mulher de 34 anos com asma.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/stach.gif",
+    "diagnostico": "Taquicardia sinusal",
+    "interpretacao": "",
+    "fonte": "http://www.ecglibrary.com/stach.html"
+  },
+  {
+    "id": 17,
+    "categoria": "Ritmos supraventriculares",
+    "caso_clinico": "Homem de 60 anos com hipertensão.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/a_big.gif",
+    "diagnostico": "Bigeminismo atrial",
+    "interpretacao": "",
+    "fonte": "http://www.ecglibrary.com/a_big.html"
+  },
+  {
+    "id": 18,
+    "categoria": "Ritmos supraventriculares",
+    "caso_clinico": "Homem de 48 anos com palpitações.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/apb.gif",
+    "diagnostico": "Extrassístole atrial (EA)",
+    "interpretacao": "- Presença de uma onda P anômala (indicada pela seta na figura abaixo).",
+    "fonte": "http://www.ecglibrary.com/apb.html"
+  },
+  {
+    "id": 19,
+    "categoria": "Ritmos supraventriculares",
+    "caso_clinico": "Homem de 76 anos com dispneia.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/af_fast2.gif",
+    "diagnostico": "Fibrilação atrial com alta resposta ventricular",
+    "interpretacao": "- Ritmo ventricular irregularmente irregular.",
+    "fonte": "http://www.ecglibrary.com/af_fast.html"
+  },
+  {
+    "id": 20,
+    "categoria": "Ritmos supraventriculares",
+    "caso_clinico": "Homem de 60 anos com hipertensão.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/af_lbbb.gif",
+    "diagnostico": "Fibrilação atrial com bloqueio de ramo esquerdo preexistente",
+    "interpretacao": "- Às vezes confundido com taquicardia ventricular, mas a inspeção cuidadosa identifica a irregularidade.\n- Características de bloqueio de ramo esquerdo típico.\n- Ausência de onda R secundária em V1.",
+    "fonte": "http://www.ecglibrary.com/af_lbbb.html"
+  },
+  {
+    "id": 21,
+    "categoria": "Ritmos supraventriculares",
+    "caso_clinico": "Mulher de 68 anos em uso de digoxina queixando-se de letargia.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/aflut.gif",
+    "diagnostico": "Flutter atrial",
+    "interpretacao": "",
+    "fonte": "http://www.ecglibrary.com/aflut.html"
+  },
+  {
+    "id": 22,
+    "categoria": "Ritmos supraventriculares",
+    "caso_clinico": "Mulher de 57 anos com palpitações.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/af2_1.gif",
+    "diagnostico": "Flutter atrial com condução AV 2:1",
+    "interpretacao": "- A morfologia em 'dente de serra' do flutter atrial geralmente pode ser vista nas derivações inferiores II, III e aVF. Às vezes, a frequência atrial rápida é visível em V1.",
+    "fonte": "http://www.ecglibrary.com/af2_1.html"
+  },
+  {
+    "id": 23,
+    "categoria": "Ritmos supraventriculares",
+    "caso_clinico": "Homem de 47 anos com histórico de palpitações e episódios de síncope.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/wpwaf2s.gif",
+    "diagnostico": "Síndrome de Wolff-Parkinson-White (WPW) com fibrilação atrial",
+    "interpretacao": "- Taquicardia de complexo largo, irregularmente irregular.\n- Impulsos atriais conduzidos aos ventrículos via:\n- Nó AV e via acessória (complexo de fusão largo);\n- Apenas via nó AV (complexo estreito, sem onda delta);\n- Apenas via via acessória (onda delta pura e muito larga).",
+    "fonte": "http://www.ecglibrary.com/wpwaf.html"
+  },
+  {
+    "id": 24,
+    "categoria": "Ritmos ventriculares",
+    "caso_clinico": "Paciente com síndrome de Romano-Ward.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/l_qt.gif",
+    "diagnostico": "Intervalo QT longo",
+    "interpretacao": "- O intervalo QT varia normalmente com a frequência cardíaca. Geralmente é corrigido pelo ciclo cardíaco (intervalo R-R), como mostrado.",
+    "fonte": "http://www.ecglibrary.com/l_qt.html"
+  },
+  {
+    "id": 25,
+    "categoria": "Ritmos ventriculares",
+    "caso_clinico": "Homem de 50 anos com dor torácica há 24 horas.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/bigem.gif",
+    "diagnostico": "Bigeminismo ventricular",
+    "interpretacao": "Há também sinais de infarto agudo do miocárdio de parede inferior.",
+    "fonte": "http://www.ecglibrary.com/bigem.html"
+  },
+  {
+    "id": 26,
+    "categoria": "Ritmos ventriculares",
+    "caso_clinico": "Mulher de 45 anos com palpitações e histórico de insuficiência renal crônica.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/vtavd1.gif",
+    "diagnostico": "Taquicardia ventricular",
+    "interpretacao": "- Evidência de dissociação atrioventricular.\n- Batimentos de fusão ou captura (critérios de Brugada/Griffith).",
+    "fonte": "http://www.ecglibrary.com/vtavd1.html"
+  },
+  {
+    "id": 27,
+    "categoria": "Ritmos ventriculares",
+    "caso_clinico": "Homem de 69 anos, 2 semanas após infarto do miocárdio inferior.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/vtavd2.gif",
+    "diagnostico": "Taquicardia ventricular",
+    "interpretacao": "- Evidência de dissociação atrioventricular.\n- Batimentos de fusão ou captura.",
+    "fonte": "http://www.ecglibrary.com/vtavd2.html"
+  },
+  {
+    "id": 28,
+    "categoria": "Ritmos ventriculares",
+    "caso_clinico": "Homem de 60 anos com coronariopatia.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/tdp.gif",
+    "diagnostico": "Taquicardia ventricular polimórfica (Torsades de pointes)",
+    "interpretacao": "- Forma de TV com morfologia variável.\n- Mudança nos intervalos R-R.\n- Importante reconhecer por causas reversíveis: hipocalemia, hipomagnesemia ou síndromes de QT longo congênitas.",
+    "fonte": "http://www.ecglibrary.com/tdp.html"
+  },
+  {
+    "id": 29,
+    "categoria": "Ritmos ventriculares",
+    "caso_clinico": "Mulher de 36 anos com episódios recorrentes de síncope.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/icd.gif",
+    "diagnostico": "Cardioversor desfibrilador implantável (CDI)",
+    "interpretacao": "- A maior parte deste registro de 12 derivações mostra taquicardia ventricular polimórfica; a grande deflexão (seta) é a descarga do desfibrilador.",
+    "fonte": "http://www.ecglibrary.com/icd.html"
+  },
+  {
+    "id": 30,
+    "categoria": "Ritmos ventriculares",
+    "caso_clinico": "Homem de 60 anos com 2 horas de dor torácica opressiva, colapsa subitamente.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/VFNORWCH.gif",
+    "diagnostico": "Fibrilação ventricular",
+    "interpretacao": "- Forma de onda bizarra, irregular e aleatória.\n- Sem complexos QRS ou ondas P identificáveis.\n- Linha de base instável.",
+    "fonte": "http://www.ecglibrary.com/vf.html"
+  },
+  {
+    "id": 31,
+    "categoria": "Marca-passos",
+    "caso_clinico": "Homem de 72 anos com marca-passo definitivo.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/vvi.gif",
+    "diagnostico": "Marcapasso ventricular (modo VVI)",
+    "interpretacao": "- Espículas de marcapasso (melhor visualizadas em V4-V6) podem ser sutis.\n- O marcapasso é disparado após um longo intervalo R-R seguindo uma extrassístole atrial bloqueada. O ritmo sinusal reassume posteriormente.",
+    "fonte": "http://www.ecglibrary.com/vvi.html"
+  },
+  {
+    "id": 32,
+    "categoria": "Síndrome de Wolff-Parkinson-White",
+    "caso_clinico": "Homem de 25 anos com episódios de taquicardia.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/wpw.gif",
+    "diagnostico": "Síndrome de Wolff-Parkinson-White",
+    "interpretacao": "- Intervalo PR curto, menor que 3 quadradinhos (120 ms).\n- QRS largo (devido à onda delta).",
+    "fonte": "http://www.ecglibrary.com/wpw.html"
+  },
+  {
+    "id": 33,
+    "categoria": "Síndrome de Wolff-Parkinson-White",
+    "caso_clinico": "Homem de 23 anos com episódios de taquicardia.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/wpw_type_B.gif",
+    "diagnostico": "Síndrome de Wolff-Parkinson-White",
+    "interpretacao": "- Intervalo PR curto, menor que 120 ms.\n- QRS largo (onda delta presente).",
+    "fonte": "http://www.ecglibrary.com/wpw_as.html"
+  },
+  {
+    "id": 34,
+    "categoria": "Síndrome de Wolff-Parkinson-White",
+    "caso_clinico": "Homem de 23 anos com episódios de palpitações.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/WPW_takykardi_af.gif",
+    "diagnostico": "Síndrome de Wolff-Parkinson-White com fibrilação atrial",
+    "interpretacao": "- Taquicardia de complexo largo, irregularmente irregular.",
+    "fonte": "http://www.ecglibrary.com/wpwaf2.html"
+  },
+  {
+    "id": 35,
+    "categoria": "Miscelânea",
+    "caso_clinico": "Homem de 56 anos com dispneia e turgência jugular.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/elec_alt.gif",
+    "diagnostico": "Derrame pericárdico com alternância elétrica",
+    "interpretacao": "- O eixo do QRS alterna entre os batimentos. Melhor visto nas derivações precordiais, onde o QRS aponta em direções diferentes.",
+    "fonte": "http://www.ecglibrary.com/elec_alt.html"
+  },
+  {
+    "id": 36,
+    "categoria": "Miscelânea",
+    "caso_clinico": "Homem de 50 anos com episódios de taquicardia.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/lgl2.gif",
+    "diagnostico": "Síndrome de Lown-Ganong-Levine",
+    "interpretacao": "- Intervalo PR curto, menor que 120 ms.\n- Alterações inespecíficas da repolarização ventricular (ST-T) e critérios de voltagem para HVE.",
+    "fonte": "http://www.ecglibrary.com/lgl.html"
+  },
+  {
+    "id": 37,
+    "categoria": "Miscelânea",
+    "caso_clinico": "Mulher de 40 anos com dor torácica pleurítica e dispneia.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/pe_2_2x.png",
+    "diagnostico": "Tromboembolismo pulmonar agudo",
+    "interpretacao": "- Padrão S1Q3T3 (S em I, Q em III, T invertida em III).",
+    "fonte": "http://www.ecglibrary.com/pe.php"
+  },
+  {
+    "id": 38,
+    "categoria": "Miscelânea",
+    "caso_clinico": "Homem de 58 anos em hemodiálise apresenta fraqueza profunda.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/highk.gif",
+    "diagnostico": "Hipercalemia (hiperpotassemia)",
+    "interpretacao": "- Ondas P pequenas ou ausentes.\n- Alargamento do QRS.\n- Ondas T apiculadas, altas e estreitas (ondas T em tenda).",
+    "fonte": "http://www.ecglibrary.com/highk.html"
+  },
+  {
+    "id": 39,
+    "categoria": "Miscelânea",
+    "caso_clinico": "Mulher de 22 anos com vômitos prolongados.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/hypok.gif",
+    "diagnostico": "Hipocalemia (hipopotassemia)",
+    "interpretacao": "- Ondas T pequenas ou achatadas.\n- Bloqueio AV de primeiro ou segundo grau.",
+    "fonte": "http://www.ecglibrary.com/hypok.html"
+  },
+  {
+    "id": 40,
+    "categoria": "Miscelânea",
+    "caso_clinico": "Homem de 55 anos com histórico de transplante cardíaco 'piggy-back' (heterotópico) por cardiomiopatia isquêmica.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/2hearts.gif",
+    "diagnostico": "Transplante cardíaco heterotópico (dois corações).",
+    "interpretacao": "- Duas morfologias de QRS distintas.\n- Duas frequências cardíacas distintas.",
+    "fonte": "http://www.ecglibrary.com/2hearts.html"
+  },
+  {
+    "id": 41,
+    "categoria": "Miscelânea",
+    "caso_clinico": "Mulher de 64 anos em uso de digoxina.",
+    "imagem_ecg": "http://ecglibrary.com/ecgs/dig.gif",
+    "diagnostico": "Efeito digitálico",
+    "interpretacao": "- Encurtamento do intervalo QT.\n- Arritmias.\n- Taquicardia atrial paroxística com bloqueio AV variável.",
+    "fonte": "http://www.ecglibrary.com/dig.html"
+  }
+]
